@@ -12,6 +12,7 @@ package-lock.json
 target/
 webpack.config.js
 webpack.generated.js
+package.json
 
 ### STS ###
 .apt_generated
