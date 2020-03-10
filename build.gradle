@@ -19,16 +19,23 @@ ext {
 }
 
 dependencies {
+	/// Spring Framework
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-devtools'
 
+	/// Vaadin Framework
 	implementation 'com.vaadin:vaadin-spring-boot-starter'
 	implementation 'com.vaadin:vaadin-server:8.10.2'
 	implementation 'com.vaadin:vaadin-client:8.10.2'
 
+	/// JShell
+	implementation'com.jcraft:jsch:0.1.55'
 
+	/// Postgres
 	runtimeOnly 'org.postgresql:postgresql'
+
+	/// Test by Jupiter
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
